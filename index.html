@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/divar-logo.png" />
+    <title>دیوار - انتخاب شهر</title>
+    <link rel="stylesheet" href="css/city-selection.css" />
+    <link rel="icon" href="images/divar-logo.PNG" />
+    <script
+      src="https://kit.fontawesome.com/e937f8c059.js"
+      crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    <div class="background-animation"></div>
+    <div class="city-selection-container">
+      <div class="logo">
+        <img src="images/divar-logo.PNG" alt="دیوار" />
+      </div>
+      <h1>به دیوار خوش آمدید</h1>
+      <p class="subtitle">لطفاً شهر خود را انتخاب کنید</p>
+      <div class="city-grid">
+        <button
+          onclick="selectCity('تهران')"
+          class="city-button"
+          data-city="tehran"
+        >
+          <span class="city-name">تهران</span>
+          <span class="city-icon">🏙️</span>
+        </button>
+        <button
+          onclick="selectCity('البرز')"
+          class="city-button"
+          data-city="alborz"
+        >
+          <span class="city-name">البرز</span>
+          <span class="city-icon">🏔️</span>
+        </button>
+        <button
+          onclick="selectCity('مشهد')"
+          class="city-button"
+          data-city="mashhad"
+        >
+          <span class="city-name">مشهد</span>
+          <span class="city-icon">🕌</span>
+        </button>
+        <button
+          onclick="selectCity('اصفهان')"
+          class="city-button"
+          data-city="isfahan"
+        >
+          <span class="city-name">اصفهان</span>
+          <span class="city-icon">🌉</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+  </body>
+  
+</html>

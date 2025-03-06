@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دیوار - آگهی‌ها</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href=
+    "images/divar-logo.PNG" />
+    <script
+      src="https://kit.fontawesome.com/e937f8c059.js"
+      crossorigin="anonymous"></script>
+
+  </head>
+
+  <body  onload="showProductList()" class="products-page page">
+   
+    <header>
+      <div class="nav-right">
+        <a href="products.html"><img src="./images/divar-logo.png" alt="divar-logo" /></a>
+        <ul>
+          <li>
+            <button onclick="changeCity()" class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              <a class="city-title"></a>            
+            </button>
+          </li>
+        </ul>
+        <div class="search">
+          <form action="">
+            <input type="search" id="search-input" placeholder="    جستوجو در همه آگهی ها"  oninput="filterProducts()"/>
+          </form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <button class="about-user">
+              <i class="fa-solid fa-user"></i>
+              <a href="#">دیوار من</a>
+            </button>
+          </li>
+          <li>
+            <button class="chat">
+              <i class="fa-solid fa-comment"></i>
+              <a href="#">چت</a>
+            </button>
+          </li>
+          <li>
+            <button class="support">
+              <a href="#">پشتیبانی</a>
+            </button>
+          </li>
+          <button class="ads">ثبت آگهی</button>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+        <div class="side-bar">
+            <div class="side-bar-header">
+              <p>دسته ها</p>
+            </div>
+            <div class="side-bar-category">
+              <ul>
+                <li><a href="#" onclick="filterByCategory('املاک')"><i class="fa-solid fa-house"></i> املاک</a></li>
+                <li><a href="#" onclick="filterByCategory('وسایل نقلیه')"><i class="fa-solid fa-car"></i> وسایل نقلیه</a></li>
+                <li><a href="#" onclick="filterByCategory('کالای دیجیتال')"><i class="fa-solid fa-mobile-button"></i> کالای دیجیتال</a></li>
+                <li><a href="#" onclick="filterByCategory('خانه و آشپزخانه')"><i class="fa-solid fa-kitchen-set"></i> خانه و آشپزخانه</a></li>
+                <li><a href="#" onclick="filterByCategory('خدمات')"><i class="fa-solid fa-brush"></i> خدمات</a></li>
+                <li><a href="#" onclick="filterByCategory('وسایل شخصی')"><i class="fa-solid fa-clock"></i> وسایل شخصی</a></li>
+                <li><a href="#" onclick="filterByCategory('سرگرمی و فراغت')"><i class="fa-solid fa-dice"></i> سرگرمی و فراغت</a></li>
+                <li><a href="#" onclick="filterByCategory('اجتماعی')"><i class="fa-solid fa-user-group"></i> اجتماعی</a></li>
+                <li><a href="#" onclick="filterByCategory('تجهیزات و صنعتی')"><i class="fa-solid fa-chair"></i> تجهیزات و صنعتی</a></li>
+                <li><a href="#" onclick="filterByCategory('استخدام و کاریابی')"><i class="fa-solid fa-briefcase"></i> استخدام و کاریابی</a></li>
+              </ul>
+            </div>
+            <div class="side-bar-detail">
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-chevron-down"></i> محل</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-down"></i> قیمت</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-down"></i> وضعیت آگهی</a></li>
+              </ul>
+            </div>
+            <div class="footer">
+              <div class="about">
+                <a href="about.html">دربارهٔ دیوار</a>
+                <a href="#">دریافت برنامه</a>
+                <a href="#">بلاگ دیوار</a>
+                <a href="#">پشتیبانی</a>
+              </div>
+              <div class="socials">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><img src="./images/icon--black.svg" alt="" /></a>
+              </div>
+              <div class="logo">
+                <a href="#"><img src="./images/footerlogo3.PNG" alt="e-namad" /></a>
+                <a href="#"><img src="./images/footerlogo2.PNG" alt="etehadye" /></a>
+                <a href="#"><img src="./images/footerlogo1.PNG" alt="samandehi" /></a>
+              </div>
+            </div>
+          </div>
+      <div class="content">
+        <div class="content-header">
+          <h1 class="header-title">دیوار ‌ انواع آگهی‌ها و خدمات در </h1>
+        </div>
+        <div class="content-body" id="products">
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+
+  </body>
+
+</html>
